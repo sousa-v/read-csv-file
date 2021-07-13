@@ -1,0 +1,12 @@
+version: "3"
+
+services: 
+  postgres:
+    image: postgres:latest
+    restart: always
+    tty: true
+    environment:
+      - POSTGRES_DB=codedrops
+      - POSTGRES_PASSWORD=docker
+    ports:
+      - "5432:5432"
